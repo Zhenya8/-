@@ -1,12 +1,9 @@
 import time
-
 import numpy as np
 from mpi4py import MPI
 
-
 def sum_array(numbers):
     return np.sum(numbers)
-
 
 comm = MPI.COMM_WORLD
 rank = comm.Get_rank()
